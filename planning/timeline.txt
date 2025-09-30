@@ -1,0 +1,13 @@
+day1
+
+structure, ✔️
+api, ✔️
+data functions,  ✔️
+basic page and component
+router — semi ok
+
+src
+    components hooks pages services lib
+
+    day 2
+    search, navbar, movie details page, swiper, carousel
