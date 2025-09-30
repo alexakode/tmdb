@@ -1,12 +1,16 @@
 import App from "../App";
 import Home from "../pages/Home";
 
-const routes = [{
+const routes = [
+  {
     path: "/",
-    element: <App/>,
-    children: [{
+    element: <App />,
+    children: [
+      {
         index: true,
-        element: <Home />
-    },
-],
-},];
+        element: <Home />,
+      },
+    ],
+  },
+];
+export default routes;

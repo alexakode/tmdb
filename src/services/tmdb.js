@@ -3,7 +3,7 @@ import api from "../lib/axios";
 const get = (url, params = {}) => {
   api
     .get(url, { params: { ...api.defaults.params, ...params } })
-    .then((result) => result.data);
+    .then((res) => res.data);
 };
 // get list of trending movies, default to mediaType movie and week
 export const getTrending = (mediaType = "movies", trendingWindow = "week") => {
