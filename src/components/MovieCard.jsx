@@ -13,6 +13,7 @@ export default function MovieCard({ item }) {
         <img src={IMG(poster_path)} alt={title} />
         <div className="">
           <h2>{title}</h2>
+          <p>{vote_average}</p>
         </div>
       </Link>
     </>
