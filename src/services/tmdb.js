@@ -1,7 +1,7 @@
 import api from "../lib/axios";
 // modular get function which accepts different parameters
 const get = (url, params = {}) => {
-  api
+  return api
     .get(url, { params: { ...api.defaults.params, ...params } })
     .then((res) => res.data);
 };

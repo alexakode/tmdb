@@ -22,7 +22,8 @@ export const usePopularMovies = (mediaType = "movie", pageNumber = 1) =>
 export const useMovieDetails = (movieId) =>
   useQuery({
     queryKey: ["movie", movieId],
-    queryFn: [() => useMovieDetails(movieId)],
+    queryFn: () => useMovieDetails(movieId),
+    enabled: !!movieId,
   });
 export const useSearch = (searchQuery, pageNumber = 1) =>
   useQuery({

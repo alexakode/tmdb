@@ -1,16 +1,20 @@
+import { Link } from "react-router-dom";
 export default function MovieCard({ item }) {
-  const IMG = (path) => {
+  const IMG = (path) =>
     path
       ? `https://image.tmdb.org/t/p/w342${path}`
       : "https://placehold.co/342x513?text=No+Image";
-  };
-  const { title } = item;
+
+  const { title, poster_path, vote_average } = item;
 
   return (
     <>
-      <h1>MovieCard</h1>
-      <h2>{title}</h2>
-      <img src={IMG(item.poster_path)} alt="" />
+      <Link to={`/movie/${item.id}`}>
+        <img src={IMG(poster_path)} alt={title} />
+        <div className="">
+          <h2>{title}</h2>
+        </div>
+      </Link>
     </>
   );
 }
