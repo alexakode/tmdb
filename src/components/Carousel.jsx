@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 import MovieCard from "./MovieCard";
 
 export default function Carousel({ items = [], title }) {
