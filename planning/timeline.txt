@@ -10,4 +10,6 @@ src
     components hooks pages services lib
 
     day 2
-    search, navbar, movie details page, swiper, carousel
+    search, navbar,
+    movie details page,
+    swiper, carousel
